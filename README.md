@@ -42,9 +42,6 @@ To specify a different number of CPUs and an output file:
 python bacon.py -c path/to/correlation_matrix.csv -i path/to/input_matrix1.csv -ncpu 4 -o result.csv
 ```
 
-## Description
-BaCon performs Bayesian Correlation Analysis using the provided correlation matrix and optional input matrices. The results are written to the specified output file, or 'bacon.csv' by default.
-
 ## Author
 Yasir Demirtaş, Thomas Rohde, Angela Shaw, Maximilian Billmann
 
