@@ -195,11 +195,11 @@ if __name__ == "__main__":
 
 
     # check if corr_matrix is a file and exists
-    if w['corr_matrix'] != True:
+    if args['corr_matrix'] != True:
         print(f'*** Correlation matrix: {args["corr_matrix"]}')
 
         if Path(args['corr_matrix']).is_file():
-            corr = pd.read_csv(args['corr_matrix'])
+            corr = pd.read_csv(args['corr_matrix'], index_col=0)
         else:
             print('Correlation matrix file does not exist')
             exit()
